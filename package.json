@@ -2,9 +2,12 @@
   "name": "rsa-api",
   "version": "1.0.0",
   "main": "index.js",
-"scripts": {
-  "start": "node index.js"
-},
+  "scripts": {
+    "start": "node --security-revert=CVE-2023-46809 index.js"
+  },
+  "engines": {
+    "node": "18.x"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
